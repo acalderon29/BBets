@@ -8,7 +8,7 @@ varstor=numeric()
   for (i in 1:countoDo) {
     sam=sample(days,size=numClass,replace = T)
     y=duplicated(sam)
-    if (sum(y)>0) brownlow=brownlow+1
+    if (sum(y)>0)brownlow=brownlow+1
     else brownlow = brownlow - odds
   }
  return(brownlow)
